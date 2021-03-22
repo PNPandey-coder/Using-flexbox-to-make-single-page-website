@@ -1,0 +1,89 @@
+:root{
+	--font-size: 18px;
+	--non-content-text-color: white;
+}
+*{
+	margin: 0px;
+	box-sizing: border-box;
+	padding: 0px;
+}
+body{
+	background: linear-gradient(-135deg, #98751266, #98121266, #12549873);
+	width: 100%;
+}
+/********************** header and navbar style starts herer ********************/
+header{
+	background: linear-gradient(45deg, #1234a873, #00ceffd9);
+	opacity: 0.8;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+header #logo{
+	width: 100px;
+	height: 100px;
+}
+header #logo img{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+header nav{
+	margin: auto;
+}
+header nav ul{
+	list-style: none;
+	display: flex;
+	flex-flow: row wrap;
+}
+header nav ul li{
+	margin: 5px 5px;
+	padding: 5px;
+	font-size: var(--font-size);
+	height: 25px;
+}
+header nav ul li a{
+	color: #efefff;
+	text-decoration: none;
+}
+/************************** navbar ends here *******************************/
+#last-sec{
+	background: black;
+	color: var(--non-content-text-color);
+	/* min-height: 50%; */
+	height: auto;
+	display: flex;
+	flex-flow: wrap row;
+	justify-content: space-around;
+	align-items: center;
+}
+#about{
+	flex-basis: 300px;
+	margin: 10px 0;
+}
+footer{	
+	column-count: 3;
+	column-width: 150px;
+	column-gap: 100px;
+	column-rule: 2px red dotted;
+	margin: 10px 0;
+	text-transform: capitalize;
+	padding: 0px 5px;
+}
+footer h2:first-line{
+	color: red;
+}
+#copyright{
+	color: var(--non-content-text-color);
+	background: black;
+	text-align: center;
+	display: block;
+}
+::selection{
+	color: #00ceff;
+	background:#aaaa6873;
+}
+
+
+
+
